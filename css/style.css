@@ -1,0 +1,237 @@
+/* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/montserrat-v25-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v25-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-500 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('../fonts/montserrat-v25-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v25-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-700 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/montserrat-v25-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v25-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  /* fraunces-regular - latin */
+@font-face {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/fraunces-v24-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/fraunces-v24-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* fraunces-700 - latin */
+  @font-face {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/fraunces-v24-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/fraunces-v24-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+    top: 0;
+}
+ul,
+ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: "Montserrat", "Fraunces", Arial, sans-serif;
+    font-weight: 400;
+    line-height: 19px;
+    font-size: 16px;
+    color: #1A202C;
+    background-color:  #F2EAE2;
+
+    
+}
+.container{
+    width: 100%;
+    max-width:1440px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* ---------------------------MAIN----------------------------- */
+.main{
+}
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+.left{
+    width: 337px;
+    height: 450px;
+}
+.right{
+    width: 337px;
+    height: 450px;
+    /* border: solid red; */
+    background-color: #fff;
+
+}
+.logo-text{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 5px;
+    color: #6C7289;
+    margin-left: 37px;
+    margin-top: 32px;
+}
+.site-text{
+
+}
+.site-heading{
+    width: 236px;
+    margin-left: 37px;
+    font-family: 'Fraunces';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+}
+.site-info{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+    color: #6C7289;
+    width: 237px;
+    margin-left: 37px;
+}
+.site-money{
+    margin-top: 29px;
+    display: flex;
+    margin-left: 37px;
+    gap: 19px;
+   
+}
+.site-money1{
+    font-family: 'Fraunces';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    color: #3D8168;
+}
+.site-money2{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 23px;
+    color: #6C7289;
+    padding-top: 5px;
+}
+.site-btn{
+}
+.btn-icon{
+    margin-right: 16px;
+}
+.btn{
+    width: 236px;
+    height: 48px;
+    background: #3D8168;
+    border-radius: 8px;
+    border: none;
+    margin-left: 37px;
+    margin-top: 30px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffff;
+}
+.btn:active{
+    background: #1A4032;
+}
+/* -------------------------MEDIA----------------------------- */
+@media(max-width:590px){
+    .main-container{
+        margin-top: -50px;
+    }
+    .img{
+        width: 343px;
+        height: 328px;
+        margin-top: -109px;
+        margin-left: 0.15px;
+        border-radius: 11px;
+    }
+    .right{
+        width: 343px;
+        margin-top: 420px;
+        margin-left: -337px;
+        
+    }
+    .site-heading.site-info.btn{
+        width: 295px;
+    }
+}
+@media(max-width:442px){
+    .img{
+        width: 340px;
+    }
+
+}
+@media(max-width:439px){
+    .img{
+        width: 335px;
+    }
+
+}
+@media(max-width:434px){
+    .img{
+        width: 330px;
+    }
+
+}
+@media(max-width:429px){
+    .img{
+        width: 325px;
+    }
+
+}
+@media(max-width:424px){
+    .img{
+        width: 320px;
+    }
+
+}
+@media(max-width:434px){
+    .right{
+        width: 320px;
+    }
+    .img{
+        width: 318px;
+    }
+
+}
