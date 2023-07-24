@@ -182,14 +182,18 @@ body{
     .img{
         width: 343px;
         height: 328px;
-        margin-top: -109px;
+        top: 0;
+        padding-top: 10px;
+        position: absolute;
         margin-left: 0.15px;
-        border-radius: 11px;
+        /* border-radius: 11px; */
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
     }
     .right{
         width: 343px;
-        margin-top: 420px;
-        margin-left: -337px;
+        margin-top: 369px;
+        margin-bottom: 15px;
         
     }
     .site-heading.site-info.btn{
@@ -230,8 +234,15 @@ body{
     .right{
         width: 320px;
     }
-    .img{
+    /* .img{
         width: 318px;
+    } */
+
+}
+@media(max-width:463px){
+    .container{
+        padding-left: 0;
+        padding-right: 0;
     }
 
 }
